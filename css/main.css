@@ -1,3 +1,32 @@
-body{
-    background-color: aqua;
+/** reset **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+/* title */
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e53170;
+    font-size: 40px;
+}
+
+/* subtitle */
+
+p{
+    text-align: center;
+}
+
+/* comtainer */
+
+.container{
+    margin: 0 auto;
+    max-width: 1150px;
+    padding-top: 50px;
 }
