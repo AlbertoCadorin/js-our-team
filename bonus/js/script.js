@@ -52,8 +52,8 @@ console.log(teamMembers);
             </div>
 */
 
-const teamMembersElement = document.getElementById('team-card')
-let result = ''
+const teamMembersElement = document.getElementById('team-card');
+let result = '';
 
 for (let i = 0; i < teamMembers.length; i++) {
   const { name, role, email, img } = teamMembers[i]
@@ -70,4 +70,19 @@ for (let i = 0; i < teamMembers.length; i++) {
                 </div>
               </div>`
 }
-teamMembersElement.innerHTML = result
+teamMembersElement.innerHTML = result;
+// richiamo del form 
+const memberFormElement = document.getElementById('member-form');
+const nameElement = document.getElementById('name');
+const roleElement = document.getElementById('role');
+const imgElemnt = document.getElementById('img')
+
+memberFormElement.addEventListener('submit', addNewMember)
+
+
+// FUNZIONI //
+
+function addNewMember(event){
+  event.preventDefault();
+  console.log('ciaooooooooooooo')
+}
