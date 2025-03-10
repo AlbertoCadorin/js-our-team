@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- foglio boot -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- foglio di stile -->
     <link rel="stylesheet" href="css/main.css">
     <title>Our Team</title>
@@ -14,17 +16,38 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="my-container">
             <!-- titolo -->
             <h1>Meat Our Team</h1>
             <!-- sottotitolo -->
             <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit eveniet cupiditate earum quia perspiciatis ut provident? Suscipit rerum minus libero dolor. Maxime sit fugit consectetur, asperiores numquam laudantium perspiciatis!</article>
         </div>
     </header>
-    <main class="container-card">
+    <main class="my-container container-card">
         <!-- griglia -->
         <div id="team-card" class="team-container"></div>
-        sdfsfsdfs
+        <div class="my-container">
+            <!-- form per inserire un nuovo membro del team -->
+            <form action="#">
+                <!-- inserisciii nome e cognome -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Nome e Cognome</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="inserisci il Nome e Cognome">
+                </div>
+                <!-- inserisci il lavoro -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Lavoro</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="inserisci il lavoro">
+                </div>
+                <!-- inserisci un immagine -->
+                <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Inserisci un immagine</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci l'immagine">
+                </div>
+                <!-- bottone -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </main>
 
     <!-- foglio js -->

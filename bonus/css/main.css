@@ -30,7 +30,7 @@ a{
     text-decoration: none;
 }
 /* conatainer */
-.container {
+.my-container {
     margin: 0 auto;
     max-width: 1150px;
     padding-top: 50px;
