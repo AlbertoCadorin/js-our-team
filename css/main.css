@@ -81,7 +81,3 @@ img {
     font-size: 14px;
     margin: 2px 0;
 }
-.container-album li{
-    width: calc((100% - 40px) / 2);
-    flex-shrink: 0;
-}

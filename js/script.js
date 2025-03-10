@@ -38,3 +38,36 @@ const teamMembers = [
 ];
 
 console.log(teamMembers);
+
+/*
+ <div class="team-member">
+                <div class="member">
+                    <img src="img/male1.png" alt="Marco Bianchi">
+                </div>
+                <div class="info">
+                    <h3>Marta Ipsum</h3>
+                    <p>SEO Specialist</p>
+                    <a href="#">laurarossi@team.com</a>
+                </div>
+            </div>
+*/
+
+const teamMembersElement = document.getElementById('team-card')
+let result = ''
+
+for (let i = 0; i < teamMembers.length; i++) {
+  const { name, role, email, img } = teamMembers[i]
+ 
+  result += `
+              <div class="team-member">
+                <div class="member">
+                    <img src=${img} alt="Marco Bianchi">
+                </div>
+                <div class="info">
+                    <h3>${name}</h3>
+                    <p>${role}</p>
+                    <a href="#">${email}</a>
+                </div>
+              </div>`
+}
+teamMembersElement.innerHTML = result
