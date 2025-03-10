@@ -61,7 +61,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   result += `
               <div class="team-member">
                 <div class="member">
-                    <img src=${img} alt="Marco Bianchi">
+                    <img src="${img}" alt="Marco Bianchi">
                 </div>
                 <div class="info">
                     <h3>${name}</h3>
